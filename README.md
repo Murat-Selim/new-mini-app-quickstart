@@ -1,9 +1,15 @@
-# Waitlist Mini App Quickstart
+# Web3 IdeaBoard Mini App
 
-This is a demo Mini App application built using OnchainKit and the Farcaster SDK. Build a waitlist sign-up mini app for your company that can be published to the Base app and Farcaster. 
+This is a Web3 IdeaBoard mini app built using OnchainKit and the Farcaster SDK. Users can share and vote on Web3 ideas with on-chain verification, discoverable via Farcaster. 
 
-> [!IMPORTANT]  
-> Before interacting with this demo, please review our [disclaimer](#disclaimer) — there are **no official tokens or apps** associated with Cubey, Base, or Coinbase.
+## Features
+
+* Wallet connection via Coinbase Wallet SDK
+* Create and categorize ideas under specific topics
+* On-chain voting system (1 wallet = 1 vote)
+* Farcaster integration for idea sharing and discovery
+* Dashboard showing trending and top-voted ideas
+* User profiles with submitted ideas and vote history
 
 ## Prerequisites
 
@@ -34,7 +40,7 @@ npm install
 Create a `.env.local` file and add your environment variables:
 
 ```bash
-NEXT_PUBLIC_PROJECT_NAME="Your App Name"
+NEXT_PUBLIC_PROJECT_NAME="Web3 IdeaBoard"
 NEXT_PUBLIC_ONCHAINKIT_API_KEY=<Replace-WITH-YOUR-CDP-API-KEY>
 NEXT_PUBLIC_URL=
 ```
@@ -70,7 +76,7 @@ You should have a URL deployed to a domain similar to: `https://your-vercel-proj
 Add your production URL to your local `.env` file:
 
 ```bash
-NEXT_PUBLIC_PROJECT_NAME="Your App Name"
+NEXT_PUBLIC_PROJECT_NAME="Web3 IdeaBoard"
 NEXT_PUBLIC_ONCHAINKIT_API_KEY=<Replace-WITH-YOUR-CDP-API-KEY>
 NEXT_PUBLIC_URL=https://your-vercel-project-name.vercel.app/
 ```
@@ -142,14 +148,14 @@ For detailed step-by-step instructions, see the [Create a Mini App tutorial](htt
 
 This project is a **demo application** created by the **Base / Coinbase Developer Relations team** for **educational and demonstration purposes only**.  
 
-**There is no token, cryptocurrency, or investment product associated with Cubey, Base, or Coinbase.**  
+**There is no token, cryptocurrency, or investment product associated with Web3 IdeaBoard, Base, or Coinbase.**  
 
-Any social media pages, tokens, or applications claiming to be affiliated with, endorsed by, or officially connected to Cubey, Base, or Coinbase are **unauthorized and fraudulent**.  
+Any social media pages, tokens, or applications claiming to be affiliated with, endorsed by, or officially connected to Web3 IdeaBoard, Base, or Coinbase are **unauthorized and fraudulent**.  
 
-We do **not** endorse or support any third-party tokens, apps, or projects using the Cubey name or branding.  
+We do **not** endorse or support any third-party tokens, apps, or projects using the Web3 IdeaBoard name or branding.  
 
 > [!WARNING]
-> Do **not** purchase, trade, or interact with any tokens or applications claiming affiliation with Coinbase, Base, or Cubey.  
+> Do **not** purchase, trade, or interact with any tokens or applications claiming affiliation with Coinbase, Base, or Web3 IdeaBoard.  
 > Coinbase and Base will never issue a token or ask you to connect your wallet for this demo.  
 
 For official Base developer resources, please visit:  

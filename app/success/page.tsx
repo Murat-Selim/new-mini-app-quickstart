@@ -5,19 +5,17 @@ import { minikitConfig } from "../../minikit.config";
 import styles from "./page.module.css";
 
 export default function Success() {
-
   const { composeCastAsync } = useComposeCast();
   
   const handleShare = async () => {
     try {
-      const text = `Yay! I just joined the waitlist for ${minikitConfig.miniapp.name.toUpperCase()}! `;
+      const text = `Just shared a new Web3 idea on ${minikitConfig.miniapp.name}! Join me in shaping the future of decentralized innovation. `;
       
       const result = await composeCastAsync({
         text: text,
         embeds: [process.env.NEXT_PUBLIC_URL || ""]
       });
 
-      // result.cast can be null if user cancels
       if (result?.cast) {
         console.log("Cast created successfully:", result.cast.hash);
       } else {
@@ -43,16 +41,25 @@ export default function Success() {
             </div>
           </div>
           
-          <h1 className={styles.title}>Welcome to the {minikitConfig.miniapp.name.toUpperCase()}!</h1>
+          <h1 className={styles.title}>Idea Submitted Successfully!</h1>
           
           <p className={styles.subtitle}>
-            You&apos;re in! We&apos;ll notify you as soon as we launch.<br />
-            Get ready to experience the future of onchain marketing.
+            Your Web3 idea has been posted to the IdeaBoard!<br />
+            Thank you for contributing to the decentralized innovation community.
           </p>
 
           <button onClick={handleShare} className={styles.shareButton}>
-            SHARE
+            SHARE ON FARCASTER
           </button>
+          
+          <div className={styles.nextSteps}>
+            <h3>What's next?</h3>
+            <ul>
+              <li>Check back to see community votes</li>
+              <li>Engage with other innovators</li>
+              <li>Refine your idea based on feedback</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
